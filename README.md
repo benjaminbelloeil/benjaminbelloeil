@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 Software engineer and student at Tecnológico de Monterrey in Mexico, currently building my personal website.<br>🤝 Seeking assistance with mastering React and enhancing my projects.<br>🌱 Learning React and expanding my software development skills.<br>💬 Ask me about which countries i've been to<br>⚡ Fun fact: Fluent in three languages and passionate about technology and language.
+🔭 Software engineer and student at Tecnológico de Monterrey in Mexico, currently building my personal website.<br>🤝 Seeking assistance with mastering React and enhancing my projects.<br>🌱 Learning React and expanding my software development skills.<br>💬 Ask me about which countries i've been to<br>⚡ Fun fact: Fluent in three languages, passionate about technology and language.
 
 
 ## 🌐 Socials:
