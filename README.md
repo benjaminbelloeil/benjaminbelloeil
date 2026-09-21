@@ -120,6 +120,8 @@
   </picture>
 </a>
 
+<br />
+
 <div style="display: flex; justify-content: center; margin: 0 auto;">
   <picture data-importer="pacman">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/galaga-contribution-graph-dark.svg" />
