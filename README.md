@@ -5,10 +5,9 @@
 </h1>
 
 <picture>
-  <source media="(max-width: 768px)" srcset="./assets/about-job.svg" />
-  <img src="./assets/about.svg" style="width: 100%; max-width: 800px; height: auto;" alt="About Benjamin Portfolio Banner" />
+  <source media="(max-width: 768px)" srcset="./assets/about-job.svg?v=1.1" />
+  <img src="./assets/about-job.svg?v=1.1" style="width: 100%; max-width: 800px; height: auto;" alt="Benjamin Raymond Belloeil - Software Engineer Portfolio" />
 </picture>
-
 
 
 <p>
