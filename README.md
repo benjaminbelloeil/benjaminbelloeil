@@ -1,22 +1,21 @@
 <img width="100%" src="https://i.pinimg.com/originals/21/9a/09/219a09d5c2d9e50e4c2d20c9a03e09af.gif" alt="Animated profile banner" />
 
-<h1 style="display: flex; justify-content: center; margin: 0 auto;">
-  <img src="./assets/name-title.svg" style="width: 1100px; height: auto;" alt="Benjamin Belloeil" />
+<h1>
+  <img src="./assets/name-title.svg" width="100%" alt="Benjamin Belloeil" />
 </h1>
 
 <picture>
-  <source media="(max-width: 768px)" srcset="./assets/engineer.svg?v=1.0" />
+  <source media="(max-width: 768px)" srcset="./assets/engineer.svg?v=1.1" />
   <img
-    src="./assets/engineer.svg?v=1.0"
-    style="width: 100%; max-width: 800px; height: auto;"
-    style="width: 100%; max-width: 400px; height: auto;"
-    alt="Benjamin Raymond Belloeil - Software Engineer Profile"
+    src="./assets/engineer.svg?v=1.1"
+    width="800"
+    alt="Benjamin Belloeil - Full-stack software engineer with Swift and mobile development skills"
   />
 </picture>
 
 
 <p>
-  <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="https://img.shields.io/badge/LinkedIn-202020?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0A66C2" height="30" alt="LinkedIn profile" /></a>
+  <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="./assets/linkedin-badge.svg" height="30" alt="LinkedIn profile" /></a>
   <a href="https://www.hackerrank.com/profile/benjaminbelloeil"><img src="https://img.shields.io/badge/HackerRank-202020?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=00EA64" height="30" alt="HackerRank profile" /></a>
   <a href="https://www.instagram.com/benjaminbelloeil_/"><img src="https://img.shields.io/badge/Instagram-202020?style=for-the-badge&amp;logo=instagram&amp;logoColor=E4405F" height="30" alt="Instagram profile" /></a>
   <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w"><img src="https://img.shields.io/badge/Spotify-202020?style=for-the-badge&amp;logo=spotify&amp;logoColor=1DB954" height="30" alt="Spotify profile" /></a>
@@ -108,11 +107,11 @@
 ## GitHub activity
 
 <div>
-<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="Most-used languages by repository count" /></a>
+<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=3FB950" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=BC8CFF&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=79C0FF&amp;chart_color=BC8CFF" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="./assets/top-languages.svg" alt="Most-used languages by repository count" /></a>
 </div>
 
 <p>
-<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://streak-stats.demolab.com/?user=benjaminbelloeil&amp;theme=dark&amp;hide_border=true&amp;card_width=900&amp;card_height=180&amp;background=202020&amp;ring=B8B8B8&amp;fire=DDDDDD&amp;currStreakLabel=DDDDDD&amp;sideLabels=CACACA&amp;currStreakNum=F1F1F1&amp;sideNums=F1F1F1&amp;dates=A0A0A0&amp;stroke=383838" alt="Total GitHub contributions, current streak, and longest streak" /></a>
+<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="./assets/streak.svg" alt="Total GitHub contributions, current streak, and longest streak" /></a>
 </p>
 
 ## Something extra
@@ -123,13 +122,12 @@
       <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=202020&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" width="100%" alt="My three most recently played tracks on Spotify" />
     </picture>
   </a>
-</a>
 
 
-<div style="display: flex; justify-content: center; margin: 0 auto;">
+<div>
   <picture data-importer="pacman">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/galaga-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/galaga-contribution-graph.svg" />
-    <img style="width: 100%; height: auto;" alt="Galaga animation of my GitHub contribution graph" src="./assets/galaga-contribution-graph.svg" />
+    <img width="100%" alt="Galaga animation of my GitHub contribution graph" src="./assets/galaga-contribution-graph.svg" />
   </picture>
 </div>

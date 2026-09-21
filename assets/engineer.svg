@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="240" viewBox="0 0 800 240" role="img" aria-labelledby="title desc">
   <title id="title">About Benjamin</title>
-  <desc id="desc">Software Engineer profile card with full-stack and mobile focus.</desc>
+  <desc id="desc">Software engineer focused on full-stack web development, Swift and mobile apps, APIs, automated testing, and AI-assisted development.</desc>
   
   <!-- Outer Window Container -->
   <rect x="0.5" y="0.5" width="799" height="239" rx="8" fill="#202020" stroke="#3d3d3d"/>
@@ -19,34 +19,21 @@
   <!-- Title String -->
   <text x="40" y="23" font-family="monospace" font-size="13" fill="#d4d4d4">Engineer.tsx</text>
   
-  <!-- Code Body Section -->
+  <!-- General engineering profile, based on the CV. -->
   <g font-family="monospace" font-size="13">
-    <!-- Line 1 -->
     <text x="19" y="65" fill="#777777">1</text>
-    <text x="44" y="65" fill="#bcbcbc">let <tspan fill="#f1f1f1">softwareEngineer</tspan> = FullStackAndMobileDeveloper(</text>
-    
-    <!-- Line 2 -->
+    <text x="44" y="65" fill="#bcbcbc" xml:space="preserve">const <tspan fill="#f1f1f1">engineer</tspan> = {</text>
     <text x="19" y="91" fill="#777777">2</text>
-    <text x="68" y="91" fill="#f1f1f1">coreStack<tspan fill="#bcbcbc">: "Next.js, TypeScript, React Native &amp; SwiftUI",</tspan></text>
-    
-    <!-- Line 3 -->
+    <text x="68" y="91" fill="#bcbcbc" xml:space="preserve"><tspan fill="#f1f1f1">focus</tspan>: &quot;Full-stack software &amp; mobile apps&quot;,</text>
     <text x="19" y="117" fill="#777777">3</text>
-    <text x="68" y="117" fill="#f1f1f1">backendAndCloud<tspan fill="#bcbcbc">: "Node.js, PostgreSQL, Supabase &amp; AWS APIs",</tspan></text>
-    
-    <!-- Line 4 -->
+    <text x="68" y="117" fill="#bcbcbc" xml:space="preserve"><tspan fill="#f1f1f1">web</tspan>: &quot;TypeScript, React &amp; Next.js&quot;,</text>
     <text x="19" y="143" fill="#777777">4</text>
-    <text x="68" y="143" fill="#f1f1f1">testingAndCI<tspan fill="#bcbcbc">: "156 Vitest suites via GitHub Actions",</tspan></text>
-    
-    <!-- Line 5 -->
+    <text x="68" y="143" fill="#bcbcbc" xml:space="preserve"><tspan fill="#f1f1f1">mobile</tspan>: &quot;Swift, SwiftUI &amp; React Native&quot;,</text>
     <text x="19" y="169" fill="#777777">5</text>
-    <text x="68" y="169" fill="#f1f1f1">appliedAI<tspan fill="#bcbcbc">: "Claude Assistants &amp; Model Context Protocol (MCP)",</tspan></text>
-    
-    <!-- Line 6 -->
+    <text x="68" y="169" fill="#bcbcbc" xml:space="preserve"><tspan fill="#f1f1f1">backend</tspan>: &quot;Node.js, REST APIs &amp; SQL&quot;,</text>
     <text x="19" y="195" fill="#777777">6</text>
-    <text x="68" y="195" fill="#f1f1f1">credentials<tspan fill="#bcbcbc">: "Tec de Monterrey (CSE) &amp; Apple Developer Academy",</tspan></text>
-    
-    <!-- Line 7 -->
+    <text x="68" y="195" fill="#bcbcbc" xml:space="preserve"><tspan fill="#f1f1f1">practices</tspan>: &quot;Testing, CI/CD &amp; AI-assisted development&quot;</text>
     <text x="19" y="221" fill="#777777">7</text>
-    <text x="44" y="221" fill="#bcbcbc">)</text>
+    <text x="44" y="221" fill="#bcbcbc" xml:space="preserve"><tspan fill="#f1f1f1"></tspan>};</text>
   </g>
 </svg>
