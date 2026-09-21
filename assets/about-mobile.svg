@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="192" viewBox="0 0 440 192" role="img" aria-labelledby="title desc">
+<title id="title">About Benjamin</title>
+<desc id="desc">SwiftUI apps, web and cloud backends, and on-device AI, presented as Swift code.</desc>
+<rect x="0.5" y="0.5" width="439" height="191" rx="8" fill="#202020" stroke="#3d3d3d"/>
+<path d="M9 1H163V35H1V9Q1 1 9 1" fill="#292929"/>
+<path d="M1 35H439" stroke="#3d3d3d"/>
+<path d="M18 1H147" stroke="#c4c4c4" stroke-width="2"/>
+<text x="22" y="23" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#d4d4d4">About.swift</text>
+<g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="17"><text x="19" y="65" fill="#777777" font-size="13">1</text><text x="44" y="65" fill="#bcbcbc" xml:space="preserve">let <tspan fill="#f1f1f1">focus</tspan> = Developer(</text><text x="19" y="91" fill="#777777" font-size="13">2</text><text x="44" y="91" fill="#bcbcbc" xml:space="preserve">    <tspan fill="#f1f1f1">iOS</tspan>: "SwiftUI",</text><text x="19" y="117" fill="#777777" font-size="13">3</text><text x="44" y="117" fill="#bcbcbc" xml:space="preserve">    <tspan fill="#f1f1f1">backend</tspan>: "Web + Cloud",</text><text x="19" y="143" fill="#777777" font-size="13">4</text><text x="44" y="143" fill="#bcbcbc" xml:space="preserve">    <tspan fill="#f1f1f1">AI</tspan>: "On-device"</text><text x="19" y="169" fill="#777777" font-size="13">5</text><text x="44" y="169" fill="#bcbcbc" xml:space="preserve"><tspan fill="#f1f1f1"></tspan>)</text></g>
+</svg>
