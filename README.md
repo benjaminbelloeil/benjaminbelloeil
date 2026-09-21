@@ -8,7 +8,7 @@
   <source media="(max-width: 768px)" srcset="./assets/engineer.svg?v=1.0" />
   <img
     src="./assets/engineer.svg?v=1.0"
-    style="width: 100%; max-width: 800px; height: auto;"
+    style="width: 100%; max-width: 400px; height: auto;"
     alt="Benjamin Raymond Belloeil - Software Engineer Profile"
   />
 </picture>
@@ -114,16 +114,15 @@
 <a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://streak-stats.demolab.com/?user=benjaminbelloeil&amp;theme=dark&amp;hide_border=true&amp;card_width=900&amp;card_height=180&amp;background=202020&amp;ring=B8B8B8&amp;fire=DDDDDD&amp;currStreakLabel=DDDDDD&amp;sideLabels=CACACA&amp;currStreakNum=F1F1F1&amp;sideNums=F1F1F1&amp;dates=A0A0A0&amp;stroke=383838" alt="Total GitHub contributions, current streak, and longest streak" /></a>
 </p>
 
-  <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
+## Something Extra
+
+<a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
     <picture>
       <source media="(max-width: 600px)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=400&amp;theme=dark&amp;bg_color=202020&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" />
       <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=202020&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" width="100%" alt="My three most recently played tracks on Spotify" />
     </picture>
-  </a>
+</a>
 
-<br />
-
-<br />
 
 <div style="display: flex; justify-content: center; margin: 0 auto;">
   <picture data-importer="pacman">
