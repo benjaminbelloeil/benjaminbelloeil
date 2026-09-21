@@ -1,0 +1,25 @@
+<svg xmlns="http://w3.org" width="800" height="220" viewBox="0 0 800 220">
+  <rect x="0.5" y="0.5" width="799" height="219" rx="8" fill="#202020" stroke="#3d3d3d"/>
+  <path d="M9 1H163V35H1V9Q1 1 9 1" fill="#292929"/>
+  <path d="M1 35H800" stroke="#3d3d3d"/>
+  <path d="M18 1H147" stroke="#c4c4c4" stroke-width="2"/>
+  <g transform="translate(18, 11)">
+    <rect width="16" height="16" rx="2" fill="#3178c6"/>
+    <text x="3" y="12" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ffffff" letter-spacing="-0.5">TS</text>
+  </g>
+  <text x="40" y="23" font-family="monospace" font-size="13" fill="#d4d4d4">About.tsx</text>
+  <g font-family="monospace" font-size="13">
+    <text x="19" y="65" fill="#777777">1</text>
+    <text x="44" y="65" fill="#bcbcbc">let engineer = FullStackMobileDeveloper(</text>
+    <text x="19" y="91" fill="#777777">2</text>
+    <text x="44" y="91" fill="#f1f1f1">    webStack<tspan fill="#bcbcbc">: "Next.js &amp; TypeScript",</tspan></text>
+    <text x="19" y="117" fill="#777777">3</text>
+    <text x="44" y="117" fill="#f1f1f1">    iosAndMobile<tspan fill="#bcbcbc">: "SwiftUI, UIKit, React Native",</tspan></text>
+    <text x="19" y="143" fill="#777777">4</text>
+    <text x="44" y="143" fill="#f1f1f1">    backendCloud<tspan fill="#bcbcbc">: "Node.js, PostgreSQL, AWS",</tspan></text>
+    <text x="19" y="169" fill="#777777">5</text>
+    <text x="44" y="169" fill="#f1f1f1">    appliedAI<tspan fill="#bcbcbc">: "Claude &amp; MCP Automation",</tspan></text>
+    <text x="19" y="195" fill="#777777">6</text>
+    <text x="44" y="195" fill="#bcbcbc">)</text>
+  </g>
+</svg>
