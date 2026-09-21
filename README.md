@@ -1,36 +1,131 @@
-# 🖥️ About Me:
-🔭 Software Engineer @ Tecnológico de Monterrey | Apple Developer Academy (Naples)<br>📱 Building production-level apps with SwiftUI, on-device AI, and full-stack architectures<br>🚀 Focused on becoming an elite iOS engineer — shipping real products, not just learning concepts<br>🧠 Experience across mobile + backend (SwiftUI, Supabase, APIs, performance optimization)<br>🌍 Trilingual (EN/ES/FR), currently learning Italian — strong global and product mindset<br>💬 Ask me about building apps, product decisions, or what I’ve learned from living in multiple countries
+<img width="100%" src="https://i.pinimg.com/originals/21/9a/09/219a09d5c2d9e50e4c2d20c9a03e09af.gif" alt="Animated profile banner" />
 
-# 🌐 Socials:
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/benjaminbelloeil) 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/benjaminbelloeil_) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/benjaminbelloeil) 
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:benjaminbelloeil@outlook.com) 
+<h1>
+  <img src="./assets/name-title.svg" width="100%" alt="Benjamin Belloeil" />
+</h1>
 
+**iOS development · Full-stack apps · On-device AI**
 
-# 💻 Tech Stack:
-![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD) ![PNPM](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![GitLab CI](https://img.shields.io/badge/gitlab%20CI-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Playwright](https://img.shields.io/badge/-playwright-%232EAD33?style=for-the-badge&logo=playwright&logoColor=white) ![Sentry](https://img.shields.io/badge/sentry-%23362D59.svg?style=for-the-badge&logo=sentry&logoColor=white) ![Cisco](https://img.shields.io/badge/cisco-%23049fd9.svg?style=for-the-badge&logo=cisco&logoColor=black) ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Meta](https://img.shields.io/badge/Meta-%230467DF.svg?style=for-the-badge&logo=Meta&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Prettier](https://img.shields.io/badge/prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black) ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi) ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+Building apps with SwiftUI, modern web tools, and cloud backends.
 
----
+<p>
+  <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="https://img.shields.io/badge/LinkedIn-Connect-555555?style=for-the-badge&amp;labelColor=202020" height="30" alt="Connect on LinkedIn" /></a>
+  <a href="https://www.hackerrank.com/profile/benjaminbelloeil"><img src="https://img.shields.io/badge/HackerRank-202020?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=DDDDDD" height="30" alt="HackerRank profile" /></a>
+  <a href="https://www.instagram.com/benjaminbelloeil_/"><img src="https://img.shields.io/badge/Instagram-202020?style=for-the-badge&amp;logo=instagram&amp;logoColor=DDDDDD" height="30" alt="Instagram profile" /></a>
+  <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w"><img src="https://img.shields.io/badge/Spotify-202020?style=for-the-badge&amp;logo=spotify&amp;logoColor=DDDDDD" height="30" alt="Listen on Spotify" /></a>
+</p>
 
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=benjaminbelloeil&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
-![](https://streak-stats.demolab.com/?user=benjaminbelloeil&theme=dark&hide_border=false)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=benjaminbelloeil&theme=dark&card_width=950)
+## Tech stack
 
+**Languages & web**
 
----
+<p>
+  <img src="https://skillicons.dev/icons?i=swift&amp;theme=dark" width="38" height="38" alt="Swift" title="Swift" />
+  <img src="https://skillicons.dev/icons?i=ts&amp;theme=dark" width="38" height="38" alt="TypeScript" title="TypeScript" />
+  <img src="https://skillicons.dev/icons?i=js&amp;theme=dark" width="38" height="38" alt="JavaScript" title="JavaScript" />
+  <img src="https://skillicons.dev/icons?i=py&amp;theme=dark" width="38" height="38" alt="Python" title="Python" />
+  <img src="https://skillicons.dev/icons?i=cpp&amp;theme=dark" width="38" height="38" alt="C++" title="C++" />
+  <img src="https://skillicons.dev/icons?i=html&amp;theme=dark" width="38" height="38" alt="HTML5" title="HTML5" />
+  <img src="https://skillicons.dev/icons?i=css&amp;theme=dark" width="38" height="38" alt="CSS3" title="CSS3" />
+  <img src="https://skillicons.dev/icons?i=nextjs&amp;theme=dark" width="38" height="38" alt="Next.js" title="Next.js" />
+  <img src="https://skillicons.dev/icons?i=react&amp;theme=dark" width="38" height="38" alt="React" title="React" />
+  <img src="https://skillicons.dev/icons?i=vue&amp;theme=dark" width="38" height="38" alt="Vue" title="Vue" />
+  <img src="https://skillicons.dev/icons?i=angular&amp;theme=dark" width="38" height="38" alt="Angular" title="Angular" />
+  <img src="https://skillicons.dev/icons?i=tailwind&amp;theme=dark" width="38" height="38" alt="Tailwind CSS" title="Tailwind CSS" />
+</p>
 
-# 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=benjaminbelloeil&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+**Backend, cloud & databases**
 
----
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs&amp;theme=dark" width="38" height="38" alt="Node.js" title="Node.js" />
+  <img src="https://skillicons.dev/icons?i=express&amp;theme=dark" width="38" height="38" alt="Express" title="Express" />
+  <img src="https://skillicons.dev/icons?i=fastapi&amp;theme=dark" width="38" height="38" alt="FastAPI" title="FastAPI" />
+  <img src="https://skillicons.dev/icons?i=flask&amp;theme=dark" width="38" height="38" alt="Flask" title="Flask" />
+  <img src="https://skillicons.dev/icons?i=dotnet&amp;theme=dark" width="38" height="38" alt=".NET" title=".NET" />
+  <img src="https://skillicons.dev/icons?i=graphql&amp;theme=dark" width="38" height="38" alt="GraphQL" title="GraphQL" />
+  <img src="https://skillicons.dev/icons?i=aws&amp;theme=dark" width="38" height="38" alt="AWS" title="AWS" />
+  <img src="https://skillicons.dev/icons?i=azure&amp;theme=dark" width="38" height="38" alt="Azure" title="Azure" />
+  <img src="https://skillicons.dev/icons?i=gcp&amp;theme=dark" width="38" height="38" alt="Google Cloud" title="Google Cloud" />
+  <img src="https://skillicons.dev/icons?i=firebase&amp;theme=dark" width="38" height="38" alt="Firebase" title="Firebase" />
+  <img src="https://skillicons.dev/icons?i=docker&amp;theme=dark" width="38" height="38" alt="Docker" title="Docker" />
+  <img src="https://skillicons.dev/icons?i=kubernetes&amp;theme=dark" width="38" height="38" alt="Kubernetes" title="Kubernetes" />
+  <img src="https://skillicons.dev/icons?i=mongodb&amp;theme=dark" width="38" height="38" alt="MongoDB" title="MongoDB" />
+  <img src="https://skillicons.dev/icons?i=mysql&amp;theme=dark" width="38" height="38" alt="MySQL" title="MySQL" />
+  <img src="https://skillicons.dev/icons?i=postgres&amp;theme=dark" width="38" height="38" alt="PostgreSQL" title="PostgreSQL" />
+  <img src="https://skillicons.dev/icons?i=sqlite&amp;theme=dark" width="38" height="38" alt="SQLite" title="SQLite" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" width="38" height="38" alt="Oracle" title="Oracle" />
+</p>
 
-# ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+**Science & hardware**
 
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="38" height="38" alt="NumPy" title="NumPy" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="38" height="38" alt="Jupyter" title="Jupyter" />
+  <img src="https://skillicons.dev/icons?i=matlab&amp;theme=dark" width="38" height="38" alt="MATLAB" title="MATLAB" />
+  <img src="https://skillicons.dev/icons?i=latex&amp;theme=dark" width="38" height="38" alt="LaTeX" title="LaTeX" />
+  <img src="https://skillicons.dev/icons?i=arduino&amp;theme=dark" width="38" height="38" alt="Arduino" title="Arduino" />
+  <img src="https://skillicons.dev/icons?i=raspberrypi&amp;theme=dark" width="38" height="38" alt="Raspberry Pi" title="Raspberry Pi" />
+  <img src="https://cdn.simpleicons.org/apple/F8F8F2" width="38" height="38" alt="Apple" title="Apple" />
+</p>
 
-# 🔝 Top Contributed Repo
-![](https://github-readme-activity-graph.vercel.app/graph?username=benjaminbelloeil&bg_color=0d1117&color=ffffff&line=F54A2A&point=F54A2A&area=true&hide_border=true)
+**Development tools**
 
-![](https://komarev.com/ghpvc/?username=benjaminbelloeil&color=orange&style=for-the-badge)
+<p>
+  <img src="https://skillicons.dev/icons?i=bash&amp;theme=dark" width="38" height="38" alt="Bash" title="Bash" />
+  <img src="https://skillicons.dev/icons?i=git&amp;theme=dark" width="38" height="38" alt="Git" title="Git" />
+  <img src="https://skillicons.dev/icons?i=github&amp;theme=dark" width="38" height="38" alt="GitHub" title="GitHub" />
+  <img src="https://skillicons.dev/icons?i=gitlab&amp;theme=dark" width="38" height="38" alt="GitLab" title="GitLab" />
+  <img src="https://skillicons.dev/icons?i=vscode&amp;theme=dark" width="38" height="38" alt="VS Code" title="VS Code" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" width="38" height="38" alt="Xcode" title="Xcode" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" width="38" height="38" alt="JetBrains" title="JetBrains" />
+  <img src="https://skillicons.dev/icons?i=npm&amp;theme=dark" width="38" height="38" alt="npm" title="npm" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" width="38" height="38" alt="ESLint" title="ESLint" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" width="38" height="38" alt="pytest" title="pytest" />
+  <img src="https://skillicons.dev/icons?i=md&amp;theme=dark" width="38" height="38" alt="Markdown" title="Markdown" />
+</p>
+
+**Design & collaboration**
+
+<p>
+  <img src="https://skillicons.dev/icons?i=figma&amp;theme=dark" width="38" height="38" alt="Figma" title="Figma" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" width="38" height="38" alt="Canva" title="Canva" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/behance/behance-original.svg" width="38" height="38" alt="Behance" title="Behance" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" width="38" height="38" alt="Confluence" title="Confluence" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" width="38" height="38" alt="Jira" title="Jira" />
+  <img src="https://skillicons.dev/icons?i=notion&amp;theme=dark" width="38" height="38" alt="Notion" title="Notion" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" width="38" height="38" alt="Slack" title="Slack" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="38" height="38" alt="Google" title="Google" />
+  <img src="https://skillicons.dev/icons?i=linkedin&amp;theme=dark" width="38" height="38" alt="LinkedIn" title="LinkedIn" />
+</p>
+
+## GitHub activity
+
+<a href="https://github.com/benjaminbelloeil?tab=overview">
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="Benjamin Belloeil's GitHub contributions over the past year" />
+</a>
+
+<p>
+  <a href="https://github.com/benjaminbelloeil?tab=overview"><img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a>
+  <a href="https://github.com/benjaminbelloeil?tab=repositories"><img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="Most-used languages by repository count" /></a>
+</p>
+
+<a href="https://github.com/benjaminbelloeil?tab=overview">
+  <img width="100%" src="https://streak-stats.demolab.com/?user=benjaminbelloeil&amp;theme=dark&amp;hide_border=true&amp;card_width=900&amp;card_height=180&amp;background=202020&amp;ring=B8B8B8&amp;fire=DDDDDD&amp;currStreakLabel=DDDDDD&amp;sideLabels=CACACA&amp;currStreakNum=F1F1F1&amp;sideNums=F1F1F1&amp;dates=A0A0A0&amp;stroke=383838" alt="Total GitHub contributions, current streak, and longest streak" />
+</a>
+
+## Galaga
+
+<picture data-importer="pacman">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/benjaminbelloeil/benjaminbelloeil/pacman-output/galaga-contribution-graph-dark.svg?game=galaga" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/benjaminbelloeil/benjaminbelloeil/pacman-output/galaga-contribution-graph.svg?game=galaga" />
+  <img width="100%" alt="Galaga animation of my GitHub contribution graph" src="https://raw.githubusercontent.com/benjaminbelloeil/benjaminbelloeil/pacman-output/galaga-contribution-graph.svg?game=galaga" />
+</picture>
+
+## On repeat
+
+  <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
+    <picture>
+      <source media="(max-width: 600px)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=400&amp;theme=dark&amp;bg_color=202020&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" />
+      <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=202020&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" width="100%" alt="My three most recently played tracks on Spotify" />
+    </picture>
+  </a>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="132" viewBox="0 0 900 132" role="img" aria-labelledby="title desc">
+  <title id="title">Benjamin Belloeil</title>
+  <desc id="desc">Benjamin Belloeil in bold lettering with neutral grey accents.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#292929" />
+      <stop offset="1" stop-color="#202020" />
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="899" height="131" rx="12" fill="url(#surface)" stroke="#383838" />
+  <rect x="27" y="33" width="4" height="66" rx="2" fill="#B8B8B8" />
+  <text x="51" y="45" fill="#A0A0A0" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="3">DEVELOPER PROFILE</text>
+  <text x="48" y="98" fill="#F1F1F1" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.8">Benjamin <tspan fill="#DDDDDD">Belloeil</tspan></text>
+  <g fill="none" stroke="#B8B8B8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7">
+    <path d="M801 51 786 66 801 81" />
+    <path d="M839 51 854 66 839 81" />
+    <path d="M828 44 813 88" />
+  </g>
+</svg>
