@@ -1,0 +1,104 @@
+name: Update Galaga contribution graph
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/galaga.yml
+  schedule:
+    - cron: '23 5 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: galaga-contribution-graph
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install the Galaga renderer
+        run: npm install --prefix "$RUNNER_TEMP/galaga" --ignore-scripts --no-audit --no-fund --save-exact pacman-contribution-graph@5.3.1
+      - name: Generate light and dark SVGs
+        env:
+          GITHUB_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GALAGA_MODULE: ${{ runner.temp }}/galaga/node_modules/pacman-contribution-graph/dist/pacman-contribution-graph.min.js
+          GALAGA_OUTPUT_DIR: assets
+        run: |
+          node --input-type=module <<'GALAGA_SCRIPT'
+          import { mkdir, writeFile } from 'node:fs/promises';
+          import { resolve } from 'node:path';
+          import { pathToFileURL } from 'node:url';
+          
+          const username = process.env.GITHUB_USER || 'benjaminbelloeil';
+          const token = process.env.GITHUB_TOKEN;
+          const modulePath = process.env.GALAGA_MODULE;
+          const outputDir = resolve(process.env.GALAGA_OUTPUT_DIR || 'dist');
+          
+          if (!token || !modulePath) {
+            throw new Error('GITHUB_TOKEN and GALAGA_MODULE must be set.');
+          }
+          
+          const { ArcadeRenderer } = await import(pathToFileURL(resolve(modulePath)).href);
+          await mkdir(outputDir, { recursive: true });
+          
+          // Keep the contribution intensity levels distinct in a neutral grey palette.
+          const greys = new Map(Object.entries({
+            '#ebedf0': '#242424', '#9be9a8': '#5a5a5a', '#40c463': '#888888',
+            '#30a14e': '#b6b6b6', '#216e39': '#e4e4e4',
+            '#161b22': '#242424', '#0e4429': '#5a5a5a', '#006d32': '#888888',
+            '#26a641': '#b6b6b6', '#39d353': '#e4e4e4',
+            '#57606a': '#aaaaaa', '#8b949e': '#aaaaaa'
+          }));
+          
+          for (const [theme, filename] of [
+            ['github', 'galaga-contribution-graph.svg'],
+            ['github-dark', 'galaga-contribution-graph-dark.svg']
+          ]) {
+            let svg = '';
+            const renderer = new ArcadeRenderer({
+              game: 'galaga',
+              platform: 'github',
+              username,
+              gameTheme: theme,
+              githubSettings: { accessToken: token },
+              svgCallback: (result) => { svg = result; },
+              gameOverCallback: () => {},
+              pointsIncreasedCallback: () => {}
+            });
+            await renderer.start();
+            if (!svg.includes('<svg') || !svg.includes('</svg>')) {
+              throw new Error(`The generator did not return an SVG for ${theme}.`);
+            }
+            svg = svg.replace(/#[0-9a-fA-F]{6}\b/g, (color) => greys.get(color.toLowerCase()) || color);
+            if (!/<svg\b[^>]*\bviewBox=/.test(svg)) {
+              const dimensions = svg.match(/<svg\b[^>]*\bwidth="(\d+)"[^>]*\bheight="(\d+)"/);
+              if (dimensions) svg = svg.replace('<svg ', `<svg viewBox="0 0 ${dimensions[1]} ${dimensions[2]}" `);
+            }
+            await writeFile(resolve(outputDir, filename), svg);
+            console.log(`Generated ${filename} for ${username}`);
+          }
+          GALAGA_SCRIPT
+      - name: Update the bundled Galaga images
+        run: |
+          git add -- assets/galaga-contribution-graph.svg assets/galaga-contribution-graph-dark.svg
+          if git diff --cached --quiet; then
+            echo "Galaga images are already up to date."
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh Galaga contribution graphs"
+          git pull --rebase origin main
+          git push origin HEAD:main
