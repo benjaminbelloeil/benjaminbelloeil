@@ -8,7 +8,7 @@
   <!-- File Tab Design Layout -->
   <path d="M9 1H163V35H1V9Q1 1 9 1" fill="#292929"/>
   <path d="M1 35H800" stroke="#3d3d3d"/>
-  <path d="M18 1H147" stroke="#c4c4c4" stroke-width="2"/>
+  <path d="M9 1H163" stroke="#c4c4c4" stroke-width="2"/>
   
   <!-- TypeScript TSX File Icon -->
   <g transform="translate(18, 11)">
@@ -27,23 +27,23 @@
     
     <!-- Line 2 -->
     <text x="19" y="91" fill="#777777">2</text>
-    <text x="44" y="91" fill="#f1f1f1">    coreStack<tspan fill="#bcbcbc">: "Next.js, TypeScript, React Native &amp; SwiftUI",</tspan></text>
+    <text x="68" y="91" fill="#f1f1f1">coreStack<tspan fill="#bcbcbc">: "Next.js, TypeScript, React Native &amp; SwiftUI",</tspan></text>
     
     <!-- Line 3 -->
     <text x="19" y="117" fill="#777777">3</text>
-    <text x="44" y="117" fill="#f1f1f1">    backendAndCloud<tspan fill="#bcbcbc">: "Node.js, PostgreSQL, Supabase &amp; AWS APIs",</tspan></text>
+    <text x="68" y="117" fill="#f1f1f1">backendAndCloud<tspan fill="#bcbcbc">: "Node.js, PostgreSQL, Supabase &amp; AWS APIs",</tspan></text>
     
     <!-- Line 4 -->
     <text x="19" y="143" fill="#777777">4</text>
-    <text x="44" y="143" fill="#f1f1f1">    testingAndCI<tspan fill="#bcbcbc">: "156 Vitest suites via GitHub Actions",</tspan></text>
+    <text x="68" y="143" fill="#f1f1f1">testingAndCI<tspan fill="#bcbcbc">: "156 Vitest suites via GitHub Actions",</tspan></text>
     
     <!-- Line 5 -->
     <text x="19" y="169" fill="#777777">5</text>
-    <text x="44" y="169" fill="#f1f1f1">    appliedAI<tspan fill="#bcbcbc">: "Claude Assistants &amp; Model Context Protocol (MCP)",</tspan></text>
+    <text x="68" y="169" fill="#f1f1f1">appliedAI<tspan fill="#bcbcbc">: "Claude Assistants &amp; Model Context Protocol (MCP)",</tspan></text>
     
     <!-- Line 6 -->
     <text x="19" y="195" fill="#777777">6</text>
-    <text x="44" y="195" fill="#f1f1f1">    credentials<tspan fill="#bcbcbc">: "Tec de Monterrey (CSE) &amp; Apple Developer Academy",</tspan></text>
+    <text x="68" y="195" fill="#f1f1f1">credentials<tspan fill="#bcbcbc">: "Tec de Monterrey (CSE) &amp; Apple Developer Academy",</tspan></text>
     
     <!-- Line 7 -->
     <text x="19" y="221" fill="#777777">7</text>
