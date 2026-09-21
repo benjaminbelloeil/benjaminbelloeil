@@ -8,17 +8,17 @@
   <source media="(max-width: 768px)" srcset="./assets/engineer.svg?v=1.0" />
   <img
     src="./assets/engineer.svg?v=1.0"
-    style="width: 100%; max-width: 400px; height: auto;"
+    style="width: 100%; max-width: 800px; height: auto;"
     alt="Benjamin Raymond Belloeil - Software Engineer Profile"
   />
 </picture>
 
 
 <p>
-  <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="https://img.shields.io/badge/LinkedIn-202020?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0A66C2" height="30" alt="LinkedIn profile" /></a>
-  <a href="https://www.hackerrank.com/profile/benjaminbelloeil"><img src="https://img.shields.io/badge/HackerRank-202020?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=00EA64" height="30" alt="HackerRank profile" /></a>
-  <a href="https://www.instagram.com/benjaminbelloeil_/"><img src="https://img.shields.io/badge/Instagram-202020?style=for-the-badge&amp;logo=instagram&amp;logoColor=E4405F" height="30" alt="Instagram profile" /></a>
-  <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w"><img src="https://img.shields.io/badge/Spotify-202020?style=for-the-badge&amp;logo=spotify&amp;logoColor=1DB954" height="30" alt="Spotify profile" /></a>
+  <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="https://img.shields.io/badge/LinkedIn-Connect-555555?style=for-the-badge&amp;labelColor=202020" height="30" alt="Connect on LinkedIn[...]
+  <a href="https://www.hackerrank.com/profile/benjaminbelloeil"><img src="https://img.shields.io/badge/HackerRank-202020?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=DDDDDD" height="30" alt="[...]
+  <a href="https://www.instagram.com/benjaminbelloeil_/"><img src="https://img.shields.io/badge/Instagram-202020?style=for-the-badge&amp;logo=instagram&amp;logoColor=DDDDDD" height="30" alt="Instagram[...]
+  <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w"><img src="https://img.shields.io/badge/Spotify-202020?style=for-the-badge&amp;logo=spotify&amp;logoColor=DDDDDD" height="30" alt="Li[...]
 </p>
 
 ## Tech stack
@@ -107,36 +107,24 @@
 ## GitHub activity
 
 <div>
-<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=github_dark" /></a>
+<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;th[...]
 </div>
 
 <p>
-  <a href="https://github.com/benjaminbelloeil?tab=repositories">
-    <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=benjaminbelloeil&amp;layout=compact&amp;langs_count=10&amp;theme=dark&amp;hide_border=true&amp;show_icons=true"
-      alt="Top languages by repository"
-      width="100%"
-    />
-  </a>
+<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://streak-stats.demolab.com/?user=benjaminbelloeil&amp;theme=dark&amp;hide_border=true&amp;card_width[...]
 </p>
 
-<p>
-<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://streak-stats.demolab.com/?user=benjaminbelloeil&amp;theme=dark&amp;hide_border=true&amp;card_width=495&amp;currStreakNum=F97316&amp;currStreakLabel=F97316&amp;fire=F97316" /></a>
-</p>
-
-## Something Extra
-
-<a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
+  <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
     <picture>
-      <source media="(max-width: 600px)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=400&amp;theme=dark&amp;bg_color=202020&amp;text_color=F1F1F1&amp;title_color=F1F1F1&quot />
-      <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=202020&amp;text_color=F1F1F1&amp;title_color=F1F1F1" alt="Recently played on Spotify" />
+      <source media="(max-width: 600px)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=400&amp;theme=dark&amp;b[...]
+      <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=202020&amp;text_color=F1F[...]
     </picture>
-</a>
+  </a>
 
-<div style="display: flex; justify-content: center; margin: 0 auto; margin-top: 14px; border: 1px solid #30363d; border-radius: 16px; overflow: hidden;">
+<div style="display: flex; justify-content: center; margin: 0 auto;">
   <picture data-importer="pacman">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/galaga-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/galaga-contribution-graph.svg" />
-    <img style="display: block; width: 100%; height: auto;" alt="Galaga animation of my GitHub contribution graph" src="./assets/galaga-contribution-graph.svg" />
+    <img style="width: 100%; height: auto;" alt="Galaga animation of my GitHub contribution graph" src="./assets/galaga-contribution-graph.svg" />
   </picture>
 </div>
