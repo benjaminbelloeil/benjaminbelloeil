@@ -4,12 +4,11 @@
   <img src="./assets/name-title.svg" style="width: 1100px; height: auto;" alt="Benjamin Belloeil" />
 </h1>
 
-<div style="display: flex; justify-content: center; margin: 0 auto;">
-  <picture>
-    <source media="(max-width: 480px)" srcset="./assets/about-mobile.svg" />
-    <img src="./assets/about.svg" style="width: 600px; height: auto;" alt="I build apps with SwiftUI, connect them to web and cloud backends, and bring AI onto the device." />
-  </picture>
-</div>
+<picture>
+  <source media="(max-width: 768px)" srcset="./assets/about-job.svg" />
+  <img src="./assets/about.svg" style="width: 100%; max-width: 800px; height: auto;" alt="About Benjamin Portfolio Banner" />
+</picture>
+
 
 
 <p>
