@@ -1,13 +1,16 @@
 <img width="100%" src="https://i.pinimg.com/originals/21/9a/09/219a09d5c2d9e50e4c2d20c9a03e09af.gif" alt="Animated profile banner" />
 
-<h1>
-  <img src="./assets/name-title.svg" width="100%" alt="Benjamin Belloeil" />
+<h1 style="display: flex; justify-content: center; margin: 0 auto;">
+  <img src="./assets/name-title.svg" style="width: 1100px; height: auto;" alt="Benjamin Belloeil" />
 </h1>
 
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/about-mobile.svg" />
-  <img src="./assets/about.svg" width="100%" alt="I build apps with SwiftUI, connect them to web and cloud backends, and bring AI onto the device." />
-</picture>
+<div style="display: flex; justify-content: center; margin: 0 auto;">
+  <picture>
+    <source media="(max-width: 480px)" srcset="./assets/about-mobile.svg" />
+    <img src="./assets/about.svg" style="width: 600px; height: auto;" alt="I build apps with SwiftUI, connect them to web and cloud backends, and bring AI onto the device." />
+  </picture>
+</div>
+
 
 <p>
   <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="https://img.shields.io/badge/LinkedIn-Connect-555555?style=for-the-badge&amp;labelColor=202020" height="30" alt="Connect on LinkedIn" /></a>
@@ -101,18 +104,13 @@
 
 ## GitHub activity
 
-<a href="https://github.com/benjaminbelloeil?tab=overview">
-  <img width="600" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="Benjamin Belloeil's GitHub contributions over the past year" />
-</a>
+<div>
+<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="Most-used languages by repository count" /></a>
+</div>
 
 <p>
-  <a href="https://github.com/benjaminbelloeil?tab=overview"><img width="296" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a>
-  <a href="https://github.com/benjaminbelloeil?tab=repositories"><img width="296" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=B8B8B8" alt="Most-used languages by repository count" /></a>
+<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://streak-stats.demolab.com/?user=benjaminbelloeil&amp;theme=dark&amp;hide_border=true&amp;card_width=900&amp;card_height=180&amp;background=202020&amp;ring=B8B8B8&amp;fire=DDDDDD&amp;currStreakLabel=DDDDDD&amp;sideLabels=CACACA&amp;currStreakNum=F1F1F1&amp;sideNums=F1F1F1&amp;dates=A0A0A0&amp;stroke=383838" alt="Total GitHub contributions, current streak, and longest streak" /></a>
 </p>
-
-<a href="https://github.com/benjaminbelloeil?tab=overview">
-  <img width="600" src="https://streak-stats.demolab.com/?user=benjaminbelloeil&amp;theme=dark&amp;hide_border=true&amp;card_width=900&amp;card_height=180&amp;background=202020&amp;ring=B8B8B8&amp;fire=DDDDDD&amp;currStreakLabel=DDDDDD&amp;sideLabels=CACACA&amp;currStreakNum=F1F1F1&amp;sideNums=F1F1F1&amp;dates=A0A0A0&amp;stroke=383838" alt="Total GitHub contributions, current streak, and longest streak" />
-</a>
 
 ## Galaga
 
