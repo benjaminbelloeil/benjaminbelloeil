@@ -33,8 +33,6 @@
 
 </br>
 
-# Tech stack
-
 **Languages & web**
 
 <p>
@@ -117,8 +115,6 @@
 </p>
 
 </br>
-
-# GitHub activity
 
 <div>
 <a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="./assets/profile-details.svg" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="./assets/stats.svg" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="./assets/top-languages.svg" alt="Most-used languages by repository count" /></a>
