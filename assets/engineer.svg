@@ -3,7 +3,7 @@
   <desc id="desc">Software engineer focused on full-stack web development, Swift and mobile apps, APIs, automated testing, and AI-assisted development.</desc>
   
   <!-- Outer Window Container -->
-  <rect x="0.5" y="0.5" width="799" height="239" rx="8" fill="#202020" stroke="#202020"/>
+  <rect x="0.5" y="0.5" width="799" height="239" rx="8" fill="#111111" stroke="#111111"/>
   
 <!-- File Tab Design Layout -->
   <path d="M9 1H163V35H1V9Q1 1 9 1" fill="#1c1c1c"/>
