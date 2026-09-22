@@ -28,18 +28,18 @@
 **Languages & web**
 
 <p>
-  <img src="https://skillicons.dev/icons?i=swift&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="Swift" title="Swift" />
-  <img src="https://skillicons.dev/icons?i=ts&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="TypeScript" title="TypeScript" />
-  <img src="https://skillicons.dev/icons?i=js&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="JavaScript" title="JavaScript" />
-  <img src="https://skillicons.dev/icons?i=py&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="Python" title="Python" />
-  <img src="https://skillicons.dev/icons?i=cpp&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="C++" title="C++" />
-  <img src="https://skillicons.dev/icons?i=html&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="HTML5" title="HTML5" />
-  <img src="https://skillicons.dev/icons?i=css&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="CSS3" title="CSS3" />
-  <img src="https://skillicons.dev/icons?i=nextjs&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="Next.js" title="Next.js" />
-  <img src="https://skillicons.dev/icons?i=react&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="React" title="React" />
-  <img src="https://skillicons.dev/icons?i=vue&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="Vue" title="Vue" />
-  <img src="https://skillicons.dev/icons?i=angular&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="Angular" title="Angular" />
-  <img src="https://skillicons.dev/icons?i=tailwind&amp;theme=dark&amp;bg=000000" width="54" height="54" alt="Tailwind CSS" title="Tailwind CSS" />
+  <img src="https://skillicons.dev/icons?i=swift&amp;theme=dark&amp;bg=111111" width="54" height="54" alt="Swift" title="Swift" />
+  <img src="https://skillicons.dev/icons?i=ts&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="TypeScript" title="TypeScript" />
+  <img src="https://skillicons.dev/icons?i=js&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="JavaScript" title="JavaScript" />
+  <img src="https://skillicons.dev/icons?i=py&amp;theme=dark&amp;bg=111111" width="54" height="54" alt="Python" title="Python" />
+  <img src="https://skillicons.dev/icons?i=cpp&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="C++" title="C++" />
+  <img src="https://skillicons.dev/icons?i=html&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="HTML5" title="HTML5" />
+  <img src="https://skillicons.dev/icons?i=css&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="CSS3" title="CSS3" />
+  <img src="https://skillicons.dev/icons?i=nextjs&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="Next.js" title="Next.js" />
+  <img src="https://skillicons.dev/icons?i=react&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="React" title="React" />
+  <img src="https://skillicons.dev/icons?i=vue&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="Vue" title="Vue" />
+  <img src="https://skillicons.dev/icons?i=angular&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="Angular" title="Angular" />
+  <img src="https://skillicons.dev/icons?i=tailwind&amp;theme=dark&amp;bg=#111111" width="54" height="54" alt="Tailwind CSS" title="Tailwind CSS" />
 </p>
 
 **Backend, cloud & databases**
@@ -109,7 +109,7 @@
 ## GitHub activity
 
 <div>
-<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=000000&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=3FB950" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=F1F1F1&amp;bg_color=000000&amp;border_color=383838&amp;icon_color=F1F1F1&amp;chart_color=F1F1F1" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="./assets/top-languages.svg" alt="Most-used languages by repository count" /></a>
+<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=111111&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=3FB950" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=F1F1F1&amp;bg_color=111111&amp;border_color=383838&amp;icon_color=F1F1F1&amp;chart_color=F1F1F1" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="./assets/top-languages.svg" alt="Most-used languages by repository count" /></a>
 </div>
 
 <p>
@@ -120,8 +120,8 @@
 
 <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
     <picture>
-      <source media="(max-width: 600px)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=400&amp;theme=dark&amp;bg_color=000000&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" />
-      <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=000000&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" width="100%" alt="My three most recently played tracks on Spotify" />
+      <source media="(max-width: 600px)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=400&amp;theme=dark&amp;bg_color=111111&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" />
+      <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=111111&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" width="100%" alt="My three most recently played tracks on Spotify" />
     </picture>
   </a>
 
