@@ -1,7 +1,7 @@
 <img width="100%" src="https://i.pinimg.com/originals/21/9a/09/219a09d5c2d9e50e4c2d20c9a03e09af.gif" alt="Animated profile banner" />
 
 <h1>
-  <img src="./assets/name-title.svg" width="100%" alt="Benjamin Belloeil" />
+  <img src="./assets/name-title.svg" width="800px" alt="Benjamin Belloeil" />
 </h1>
 
 <picture>
@@ -107,7 +107,7 @@
 ## GitHub activity
 
 <div>
-<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=3FB950" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=BC8CFF&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=79C0FF&amp;chart_color=BC8CFF" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="./assets/top-languages.svg" alt="Most-used languages by repository count" /></a>
+<a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=benjaminbelloeil&amp;theme=graywhite&amp;name=Benjamin+Belloeil&amp;title_color=F1F1F1&amp;text_color=CACACA&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=AAAAAA&amp;chart_color=3FB950" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=benjaminbelloeil&amp;theme=graywhite&amp;title_color=F1F1F1&amp;text_color=F1F1F1&amp;bg_color=202020&amp;border_color=383838&amp;icon_color=F1F1F1&amp;chart_color=F1F1F1" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="./assets/top-languages.svg" alt="Most-used languages by repository count" /></a>
 </div>
 
 <p>
