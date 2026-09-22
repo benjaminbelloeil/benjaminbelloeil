@@ -1,8 +1,8 @@
+<img width="100%" height="400" src="https://i.pinimg.com/originals/ca/00/63/ca00636e3c270b35b83251300cc880e2.gif" alt="Animated profile banner" />
+
 <h1>
   <img src="./assets/name-title.svg" width="840px" alt="Benjamin Belloeil" />
 </h1>
-
-<img width="100%" height="400" src="https://i.pinimg.com/originals/ca/00/63/ca00636e3c270b35b83251300cc880e2.gif" alt="Animated profile banner" />
 
 <picture>
   <source media="(max-width: 840px)" srcset="./assets/engineer.svg?v=1.1" />
