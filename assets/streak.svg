@@ -22,7 +22,7 @@
         </defs>
         <g clip-path="url(#outer_rectangle)">
             <g style="isolation: isolate">
-                <rect stroke="#383838" stroke-opacity="0" fill="#111111" rx="4.5" x="0.5" y="0.5" width="899" height="179" />
+                <rect stroke="#383838" stroke-opacity="1" fill="#111111" rx="5" x="0.5" y="0.5" width="899" height="179" stroke-width="1" ry="5" vector-effect="non-scaling-stroke" />
             </g>
             <g style="isolation: isolate">
                 <line x1="300" y1="24.25" x2="300" y2="162.5" vector-effect="non-scaling-stroke" stroke-width="1" stroke="#383838" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />

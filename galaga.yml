@@ -64,23 +64,6 @@ jobs:
             '#57606a': '#aaaaaa', '#8b949e': '#aaaaaa'
           }));
           
-          function frameGalaga(svg) {
-            if (svg.includes('id="galaga-frame"')) return svg;
-            const dimensions = svg.match(/<svg\b[^>]*\bwidth="(\d+)"[^>]*\bheight="(\d+)"/);
-            if (!dimensions) throw new Error('Cannot frame Galaga: SVG dimensions are missing.');
-            const width = Number(dimensions[1]);
-            const height = Number(dimensions[2]);
-            const padding = 12;
-            const framedWidth = width + padding * 2;
-            const framedHeight = height + padding * 2;
-            return `<svg xmlns="http://www.w3.org/2000/svg" id="galaga-frame" width="${framedWidth}" height="${framedHeight}" viewBox="0 0 ${framedWidth} ${framedHeight}" role="img" aria-labelledby="galaga-title">
-          <title id="galaga-title">Galaga contribution animation</title>
-          <defs><clipPath id="galaga-rounded-clip"><rect x="${padding}" y="${padding}" width="${width}" height="${height}" rx="10"/></clipPath></defs>
-          <rect x="1.5" y="1.5" width="${framedWidth - 3}" height="${framedHeight - 3}" rx="22" fill="#202020" stroke="#6b6b6b" stroke-width="3"/>
-          <g clip-path="url(#galaga-rounded-clip)"><g transform="translate(${padding} ${padding})">${svg}</g></g>
-          </svg>`;
-          }
-          
           for (const [theme, filename] of [
             ['github', 'galaga-contribution-graph.svg'],
             ['github-dark', 'galaga-contribution-graph-dark.svg']
@@ -105,148 +88,52 @@ jobs:
               const dimensions = svg.match(/<svg\b[^>]*\bwidth="(\d+)"[^>]*\bheight="(\d+)"/);
               if (dimensions) svg = svg.replace('<svg ', `<svg viewBox="0 0 ${dimensions[1]} ${dimensions[2]}" `);
             }
-            svg = frameGalaga(svg);
             await writeFile(resolve(outputDir, filename), svg);
             console.log(`Generated ${filename} for ${username}`);
           }
           GALAGA_SCRIPT
-      - name: Generate language card with logos
+      - name: Refresh activity cards with matching borders
         env:
           GITHUB_USER: ${{ github.repository_owner }}
         run: |
-          python3 <<'LANGUAGE_SCRIPT'
-          import base64
+          python3 <<'BORDER_SCRIPT'
           import os
           import urllib.parse
           import urllib.request
           import xml.etree.ElementTree as ET
           from pathlib import Path
-          
-          ICONS = {"Swift": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjZjA1MTM4IiBkPSJNMTI2LjMzIDM0LjA2YTM5LjMyIDM5LjMyIDAgMDAtLjc5LTcuODMgMjguNzggMjguNzggMCAwMC0yLjY1LTcuNTggMjguODQgMjguODQgMCAwMC00Ljc2LTYuMzIgMjMuNDIgMjMuNDIgMCAwMC02LjYyLTQuNTUgMjcuMjcgMjcuMjcgMCAwMC03LjY4LTIuNTNjLTIuNjUtLjUxLTUuNTYtLjUxLTguMjEtLjc2SDMwLjI1YTQ1LjQ2IDQ1LjQ2IDAgMDAtNi4wOS41MSAyMS44MiAyMS44MiAwIDAwLTUuODIgMS41MmMtLjUzLjI1LTEuMzIuNTEtMS44NS43NmEzMy44MiAzMy44MiAwIDAwLTUgMy4yOGMtLjUzLjUxLTEuMDYuNzYtMS41OSAxLjI2YTIyLjQxIDIyLjQxIDAgMDAtNC43NiA2LjMyIDIzLjYxIDIzLjYxIDAgMDAtMi42NSA3LjU4IDc4LjUgNzguNSAwIDAwLS43OSA3LjgzdjYwLjM5YTM5LjMyIDM5LjMyIDAgMDAuNzkgNy44MyAyOC43OCAyOC43OCAwIDAwMi42NSA3LjU4IDI4Ljg0IDI4Ljg0IDAgMDA0Ljc2IDYuMzIgMjMuNDIgMjMuNDIgMCAwMDYuNjIgNC41NSAyNy4yNyAyNy4yNyAwIDAwNy42OCAyLjUzYzIuNjUuNTEgNS41Ni41MSA4LjIxLjc2aDYzLjIyYTQ1LjA4IDQ1LjA4IDAgMDA4LjIxLS43NiAyNy4yNyAyNy4yNyAwIDAwNy42OC0yLjUzIDMwLjEzIDMwLjEzIDAgMDA2LjYyLTQuNTUgMjIuNDEgMjIuNDEgMCAwMDQuNzYtNi4zMiAyMy42MSAyMy42MSAwIDAwMi42NS03LjU4IDc4LjQ5IDc4LjQ5IDAgMDAuNzktNy44M1YzNC4wNnoiLz48cGF0aCBmaWxsPSIjZmVmZWZlIiBkPSJNODUgOTYuNWMtMTEuMTEgNi4xMy0yNi4zOCA2Ljc2LTQxLjc1LjQ3QTY0LjUzIDY0LjUzIDAgMDExMy44NCA3M2E1MCA1MCAwIDAwMTAuODUgNi4zMmMxNS44NyA3LjEgMzEuNzMgNi42MSA0Mi45IDAtMTUuOS0xMS42Ni0yOS40LTI2LjgyLTM5LjQ2LTM5LjJhNDMuNDcgNDMuNDcgMCAwMS01LjI5LTYuODJjMTIuMTYgMTAuNjEgMzEuNSAyNCAzOC4zOCAyNy43OWEyNzEuNzcgMjcxLjc3IDAgMDEtMjctMzIuMzQgMjY2LjggMjY2LjggMCAwMDQ0LjQ3IDM0Ljg3Yy43MS4zOCAxLjI2LjcgMS43IDFhMzIuNyAzMi43IDAgMDAxLjIxLTMuNTFjMy43MS0xMi44OS0uNTMtMjcuNTQtOS43OS0zOS42N0M5My4yNSAzMy44MSAxMDYgNTcuMDUgMTAwLjY2IDc2LjUxYy0uMTQuNTMtLjI5IDEtLjQ1IDEuNTVsLjE5LjIyYzEwLjU5IDEyLjYzIDcuNjggMjYgNi4zNSAyMy41QzEwMSA5MSA5MC4zNyA5NC4zMyA4NSA5Ni41eiIvPjwvc3ZnPgo=", "JavaScript": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRjBEQjRGIiBkPSJNMS40MDggMS40MDhoMTI1LjE4NHYxMjUuMTg1SDEuNDA4eiIvPjxwYXRoIGZpbGw9IiMzMjMzMzAiIGQ9Ik0xMTYuMzQ3IDk2LjczNmMtLjkxNy01LjcxMS00LjY0MS0xMC41MDgtMTUuNjcyLTE0Ljk4MS0zLjgzMi0xLjc2MS04LjEwNC0zLjAyMi05LjM3Ny01LjkyNi0uNDUyLTEuNjktLjUxMi0yLjY0Mi0uMjI2LTMuNjY1LjgyMS0zLjMyIDQuNzg0LTQuMzU1IDcuOTI1LTMuNDAzIDIuMDIzLjY3OCAzLjkzOCAyLjIzNyA1LjA5MyA0LjcyNCA1LjQwMi0zLjQ5OCA1LjM5MS0zLjQ3NSA5LjE2My01Ljg3OS0xLjM4MS0yLjE0MS0yLjExOC0zLjEyOS0zLjAyMi00LjA0NS0zLjI0OS0zLjYyOS03LjY3Ni01LjQ5OC0xNC43NTYtNS4zNTVsLTMuNjg4LjQ3N2MtMy41MzQuODkzLTYuOTAyIDIuNzQ4LTguODc3IDUuMjM1LTUuOTI2IDYuNzI0LTQuMjM2IDE4LjQ5MiAyLjk3NSAyMy4zMzUgNy4xMDQgNS4zMzIgMTcuNTQgNi41NDUgMTguODczIDExLjUzMSAxLjI5NyA2LjEwNC00LjQ4NiA4LjA4LTEwLjIzNCA3LjM3OC00LjIzNi0uODgxLTYuNTkyLTMuMDM0LTkuMTM5LTYuOTQ5LTQuNjg4IDIuNzEzLTQuNjg4IDIuNzEzLTkuNTA4IDUuNDg1IDEuMTQzIDIuNDk5IDIuMzQ0IDMuNjMgNC4yNiA1Ljc5NSA5LjA2OCA5LjE5OCAzMS43NiA4Ljc0NiAzNS44My01LjE3Ni4xNjUtLjQ3OCAxLjI2MS0zLjY2Ni4zOC04LjU4MXpNNjkuNDYyIDU4Ljk0M0g1Ny43NTNsLS4wNDggMzAuMjcyYzAgNi40MzguMzMzIDEyLjM0LS43MTQgMTQuMTQ5LTEuNzEzIDMuNTU4LTYuMTUyIDMuMTE3LTguMTc1IDIuNDI3LTIuMDU5LTEuMDEyLTMuMTA2LTIuNDUxLTQuMzE5LTQuNDg1LS4zMzMtLjU4NC0uNTgzLTEuMDM2LS42NjctMS4wNzFsLTkuNTIgNS44M2MxLjU4MyAzLjI0OSAzLjkxNSA2LjA2OSA2LjkwMiA3LjkwMSA0LjQ2MiAyLjY3OCAxMC40NTkgMy40OTkgMTYuNzMxIDIuMDU5IDQuMDgyLTEuMTg5IDcuNjA0LTMuNjUyIDkuNDQ4LTcuNDAxIDIuNjY2LTQuOTE1IDIuMDk0LTEwLjg2NCAyLjA3LTE3LjQ0NC4wNi0xMC43MzUuMDAxLTIxLjQ2OC4wMDEtMzIuMjM3eiIvPjwvc3ZnPgo=", "TypeScript": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjIuNjcgNDdoOTkuNjd2NzMuNjdIMjIuNjd6Ii8+PHBhdGggZGF0YS1uYW1lPSJvcmlnaW5hbCIgZmlsbD0iIzAwN2FjYyIgZD0iTTEuNSA2My45MXY2Mi41aDEyNXYtMTI1SDEuNXptMTAwLjczLTVhMTUuNTYgMTUuNTYgMCAwMTcuODIgNC41IDIwLjU4IDIwLjU4IDAgMDEzIDRjMCAuMTYtNS40IDMuODEtOC42OSA1Ljg1LS4xMi4wOC0uNi0uNDQtMS4xMy0xLjIzYTcuMDkgNy4wOSAwIDAwLTUuODctMy41M2MtMy43OS0uMjYtNi4yMyAxLjczLTYuMjEgNWE0LjU4IDQuNTggMCAwMC41NCAyLjM0Yy44MyAxLjczIDIuMzggMi43NiA3LjI0IDQuODYgOC45NSAzLjg1IDEyLjc4IDYuMzkgMTUuMTYgMTAgMi42NiA0IDMuMjUgMTAuNDYgMS40NSAxNS4yNC0yIDUuMi02LjkgOC43My0xMy44MyA5LjlhMzguMzIgMzguMzIgMCAwMS05LjUyLS4xIDIzIDIzIDAgMDEtMTIuNzItNi42M2MtMS4xNS0xLjI3LTMuMzktNC41OC0zLjI1LTQuODJhOS4zNCA5LjM0IDAgMDExLjE1LS43M0w4MiAxMDFsMy41OS0yLjA4Ljc1IDEuMTFhMTYuNzggMTYuNzggMCAwMDQuNzQgNC41NGM0IDIuMSA5LjQ2IDEuODEgMTIuMTYtLjYyYTUuNDMgNS40MyAwIDAwLjY5LTYuOTJjLTEtMS4zOS0zLTIuNTYtOC41OS01LTYuNDUtMi43OC05LjIzLTQuNS0xMS43Ny03LjI0YTE2LjQ4IDE2LjQ4IDAgMDEtMy40My02LjI1IDI1IDI1IDAgMDEtLjIyLThjMS4zMy02LjIzIDYtMTAuNTggMTIuODItMTEuODdhMzEuNjYgMzEuNjYgMCAwMTkuNDkuMjZ6bS0yOS4zNCA1LjI0djUuMTJINTYuNjZ2NDYuMjNINDUuMTVWNjkuMjZIMjguODh2LTVhNDkuMTkgNDkuMTkgMCAwMS4xMi01LjE3QzI5LjA4IDU5IDM5IDU5IDUxIDU5aDIxLjgzeiIvPjwvc3ZnPgo=", "Python": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48bGluZWFyR3JhZGllbnQgaWQ9InB5dGhvbi1vcmlnaW5hbC1hIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjcwLjI1MiIgeTE9IjEyMzcuNDc2IiB4Mj0iMTcwLjY1OSIgeTI9IjExNTEuMDg5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC41NjMgMCAwIC0uNTY4IC0yOS4yMTUgNzA3LjgxNykiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzVBOUZENCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzMwNjk5OCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJweXRob24tb3JpZ2luYWwtYiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyMDkuNDc0IiB5MT0iMTA5OC44MTEiIHgyPSIxNzMuNjIiIHkyPSIxMTQ5LjUzNyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguNTYzIDAgMCAtLjU2OCAtMjkuMjE1IDcwNy44MTcpIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkQ0M0IiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkU4NzMiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGZpbGw9InVybCgjcHl0aG9uLW9yaWdpbmFsLWEpIiBkPSJNNjMuMzkxIDEuOTg4Yy00LjIyMi4wMi04LjI1Mi4zNzktMTEuOCAxLjAwNy0xMC40NSAxLjg0Ni0xMi4zNDYgNS43MS0xMi4zNDYgMTIuODM3djkuNDExaDI0LjY5M3YzLjEzN0gyOS45NzdjLTcuMTc2IDAtMTMuNDYgNC4zMTMtMTUuNDI2IDEyLjUyMS0yLjI2OCA5LjQwNS0yLjM2OCAxNS4yNzUgMCAyNS4wOTYgMS43NTUgNy4zMTEgNS45NDcgMTIuNTE5IDEzLjEyNCAxMi41MTloOC40OTFWNjcuMjM0YzAtOC4xNTEgNy4wNTEtMTUuMzQgMTUuNDI2LTE1LjM0aDI0LjY2NWM2Ljg2NiAwIDEyLjM0Ni01LjY1NCAxMi4zNDYtMTIuNTQ4VjE1LjgzM2MwLTYuNjkzLTUuNjQ2LTExLjcyLTEyLjM0Ni0xMi44MzctNC4yNDQtLjcwNi04LjY0NS0xLjAyNy0xMi44NjYtMS4wMDh6TTUwLjAzNyA5LjU1N2MyLjU1IDAgNC42MzQgMi4xMTcgNC42MzQgNC43MjEgMCAyLjU5My0yLjA4MyA0LjY5LTQuNjM0IDQuNjktMi41NiAwLTQuNjMzLTIuMDk3LTQuNjMzLTQuNjktLjAwMS0yLjYwNCAyLjA3My00LjcyMSA0LjYzMy00LjcyMXoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMTAuMjYpIi8+PHBhdGggZmlsbD0idXJsKCNweXRob24tb3JpZ2luYWwtYikiIGQ9Ik05MS42ODIgMjguMzh2MTAuOTY2YzAgOC41LTcuMjA4IDE1LjY1NS0xNS40MjYgMTUuNjU1SDUxLjU5MWMtNi43NTYgMC0xMi4zNDYgNS43ODMtMTIuMzQ2IDEyLjU0OXYyMy41MTVjMCA2LjY5MSA1LjgxOCAxMC42MjggMTIuMzQ2IDEyLjU0NyA3LjgxNiAyLjI5NyAxNS4zMTIgMi43MTMgMjQuNjY1IDAgNi4yMTYtMS44MDEgMTIuMzQ2LTUuNDIzIDEyLjM0Ni0xMi41NDd2LTkuNDEySDYzLjkzOHYtMy4xMzhoMzcuMDEyYzcuMTc2IDAgOS44NTItNS4wMDUgMTIuMzQ4LTEyLjUxOSAyLjU3OC03LjczNSAyLjQ2Ny0xNS4xNzQgMC0yNS4wOTYtMS43NzQtNy4xNDUtNS4xNjEtMTIuNTIxLTEyLjM0OC0xMi41MjFoLTkuMjY4ek03Ny44MDkgODcuOTI3YzIuNTYxIDAgNC42MzQgMi4wOTcgNC42MzQgNC42OTIgMCAyLjYwMi0yLjA3NCA0LjcxOS00LjYzNCA0LjcxOS0yLjU1IDAtNC42MzMtMi4xMTctNC42MzMtNC43MTkgMC0yLjU5NSAyLjA4My00LjY5MiA0LjYzMy00LjY5MnoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMTAuMjYpIi8+PHJhZGlhbEdyYWRpZW50IGlkPSJweXRob24tb3JpZ2luYWwtYyIgY3g9IjE4MjUuNjc4IiBjeT0iNDQ0LjQ1IiByPSIyNi43NDMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMCAtLjI0IC0xLjA1NSAwIDUzMi45NzkgNTU3LjU3NikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNCOEI4QjgiIHN0b3Atb3BhY2l0eT0iLjQ5OCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdGN0Y3RiIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48cGF0aCBvcGFjaXR5PSIuNDQ0IiBmaWxsPSJ1cmwoI3B5dGhvbi1vcmlnaW5hbC1jKSIgZD0iTTk3LjMwOSAxMTkuNTk3YzAgMy41NDMtMTQuODE2IDYuNDE2LTMzLjA5MSA2LjQxNi0xOC4yNzYgMC0zMy4wOTItMi44NzMtMzMuMDkyLTYuNDE2IDAtMy41NDQgMTQuODE1LTYuNDE3IDMzLjA5Mi02LjQxNyAxOC4yNzUgMCAzMy4wOTEgMi44NzIgMzMuMDkxIDYuNDE3eiIvPjwvc3ZnPgo=", "C#": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjOUI0Rjk2IiBkPSJNMTE1LjQgMzAuN0w2Ny4xIDIuOWMtLjgtLjUtMS45LS43LTMuMS0uNy0xLjIgMC0yLjMuMy0zLjEuN2wtNDggMjcuOWMtMS43IDEtMi45IDMuNS0yLjkgNS40djU1LjdjMCAxLjEuMiAyLjQgMSAzLjVsMTA2LjgtNjJjLS42LTEuMi0xLjUtMi4xLTIuNC0yLjd6Ii8+PHBhdGggZmlsbD0iIzY4MjE3QSIgZD0iTTEwLjcgOTUuM2MuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40VjM2LjFjMC0uOS0uMS0xLjktLjYtMi44bC0xMDYuNiA2MnoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNODUuMyA3Ni4xQzgxLjEgODMuNSA3My4xIDg4LjUgNjQgODguNWMtMTMuNSAwLTI0LjUtMTEtMjQuNS0yNC41czExLTI0LjUgMjQuNS0yNC41YzkuMSAwIDE3LjEgNSAyMS4zIDEyLjVsMTMtNy41Yy02LjgtMTEuOS0xOS42LTIwLTM0LjMtMjAtMjEuOCAwLTM5LjUgMTcuNy0zOS41IDM5LjVzMTcuNyAzOS41IDM5LjUgMzkuNWMxNC42IDAgMjcuNC04IDM0LjItMTkuOGwtMTIuOS03LjZ6TTk3IDY2LjJsLjktNC4zaC00LjJ2LTQuN2g1LjFMMTAwIDUxaDQuOWwtMS4yIDYuMWgzLjhsMS4yLTYuMWg0LjhsLTEuMiA2LjFoMi40djQuN2gtMy4zbC0uOSA0LjNoNC4ydjQuN2gtNS4xbC0xLjIgNmgtNC45bDEuMi02aC0zLjhsLTEuMiA2aC00LjhsMS4yLTZoLTIuNHYtNC43SDk3em00LjggMGgzLjhsLjktNC4zaC0zLjhsLS45IDQuM3oiLz48L3N2Zz4K"}
-          NS = 'http://www.w3.org/2000/svg'
-          ET.register_namespace('', NS)
-          
-          def add_language_icons(svg):
-              root = ET.fromstring(svg)
-              if root.tag != '{' + NS + '}svg':
-                  raise ValueError('Language-card endpoint did not return an SVG')
-              replaced = 0
-              for group in root.iter('{' + NS + '}g'):
-                  markers = [c for c in group if c.tag == '{' + NS + '}rect' and c.get('width') == '14' and c.get('height') == '14']
-                  labels = [c for c in group if c.tag == '{' + NS + '}text']
-                  if not markers or len(markers) != len(labels):
-                      continue
-                  for marker, label in zip(markers, labels):
-                      name = ''.join(label.itertext())
-                      logo = ICONS.get(name)
-                      if logo is None:
-                          # Keep new language names legible until a matching brand icon is added.
-                          generic = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#454545"/><path d="m8 7-5 5 5 5m8-10 5 5-5 5" fill="none" stroke="white" stroke-width="2"/></svg>'
-                          logo = base64.b64encode(generic.encode()).decode()
-                      icon = ET.Element('{' + NS + '}image', {
-                          'x':'-2', 'y':str(float(marker.get('y','0'))-2),
-                          'width':'18', 'height':'18',
-                          'href':'data:image/svg+xml;base64,'+logo,
-                          'aria-label':name+' logo'
-                      })
-                      group.insert(list(group).index(marker), icon)
-                      group.remove(marker)
-                      label.set('x','24')
-                      replaced += 1
-              if replaced == 0:
-                  raise ValueError('No language legend found; refusing to replace the existing card')
-              title = ET.Element('{' + NS + '}title')
-              title.text = 'Top languages by repository count, with language logos'
-              root.insert(0, title)
-              root.set('role','img')
-              return ET.tostring(root, encoding='unicode')
-          
-          if __name__ == '__main__':
-              query = urllib.parse.urlencode({
-                  'username':os.environ.get('GITHUB_USER','benjaminbelloeil'),
-                  'theme':'graywhite', 'title_color':'F1F1F1', 'text_color':'CACACA',
-                  'bg_color':'202020', 'border_color':'383838',
-                  'icon_color':'AAAAAA', 'chart_color':'B8B8B8'
-              })
-              url = 'https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?' + query
-              with urllib.request.urlopen(url, timeout=60) as response:
-                  svg = response.read().decode('utf-8')
-              rendered = add_language_icons(svg)
-              Path('assets').mkdir(exist_ok=True)
-              Path('assets/top-languages.svg').write_text(rendered)
-              print('Updated language card with embedded logos')
-          LANGUAGE_SCRIPT
-      - name: Generate streak card with conditional color
-        env:
-          GITHUB_USER: ${{ github.repository_owner }}
+          NS='{http://www.w3.org/2000/svg}'
+          ET.register_namespace('',NS[1:-1])
+          ET.register_namespace('xlink','http://www.w3.org/1999/xlink')
+          def frame(svg):
+           root=ET.fromstring(svg)
+           parents={c:p for p in root.iter() for c in p}
+           def in_defs(node):
+            while node in parents:
+             node=parents[node]
+             if node.tag==NS+'defs': return True
+            return False
+           rect=next((n for n in root.iter(NS+'rect') if 'stroke' in n.attrib and not in_defs(n)),None)
+           if rect is None: raise ValueError('Card background missing')
+           for key,value in {'fill':'#111111','stroke':'#383838','stroke-width':'1','stroke-opacity':'1','rx':'5','ry':'5','vector-effect':'non-scaling-stroke'}.items(): rect.set(key,value)
+           return ET.tostring(root,encoding='unicode')
+          if __name__=='__main__':
+           for name in ['profile-details','stats']:
+            query={'username':os.environ.get('GITHUB_USER','benjaminbelloeil'),'theme':'graywhite','title_color':'F1F1F1','text_color':'F1F1F1' if name=='stats' else 'CACACA','bg_color':'111111','border_color':'383838','icon_color':'F1F1F1' if name=='stats' else 'AAAAAA','chart_color':'F1F1F1' if name=='stats' else '3FB950'}
+            if name=='profile-details': query['name']='Benjamin Belloeil'
+            with urllib.request.urlopen('https://github-profile-summary-cards.vercel.app/api/cards/'+name+'?'+urllib.parse.urlencode(query),timeout=60) as r: svg=r.read().decode()
+            Path('assets/'+name+'.svg').write_text(frame(svg))
+           for name in ['top-languages','streak']:
+            p=Path('assets/'+name+'.svg'); p.write_text(frame(p.read_text()))
+          BORDER_SCRIPT
+      - name: Update the bundled Galaga images
         run: |
-          python3 <<'STREAK_SCRIPT'
-          import os
-          import re
-          import urllib.parse
-          import urllib.request
-          import xml.etree.ElementTree as ET
-          from pathlib import Path
-          
-          NS = 'http://www.w3.org/2000/svg'
-          ET.register_namespace('', NS)
-          ET.register_namespace('xlink', 'http://www.w3.org/1999/xlink')
-          WHITE = '#FFFFFF'
-          ORANGE = '#FF9A3C'
-          
-          def style_streak(svg):
-              root = ET.fromstring(svg)
-              parents = {child: parent for parent in root.iter() for child in parent}
-              def column(label):
-                  labels = [node for node in root.iter('{' + NS + '}text') if ''.join(node.itertext()).strip() == label]
-                  if len(labels) != 1:
-                      raise ValueError('Expected one streak label: ' + label)
-                  return parents[parents[labels[0]]]
-              current = column('Current Streak')
-              numbers = [node for node in current.iter('{' + NS + '}text') if re.fullmatch(r'[0-9,]+', ''.join(node.itertext()).strip())]
-              if len(numbers) != 1:
-                  raise ValueError('Cannot determine the current streak; keeping the previous card')
-              value = int(''.join(numbers[0].itertext()).strip().replace(',', ''))
-              color = ORANGE if value > 0 else WHITE
-              for node in current.iter():
-                  if node.tag == '{' + NS + '}text' and node.get('font-size') != '12px':
-                      node.set('fill', color)
-                  elif node.tag == '{' + NS + '}circle':
-                      node.set('stroke', color)
-                  elif node.tag == '{' + NS + '}path' and node.get('fill', 'none') != 'none':
-                      node.set('fill', color)
-              for label in ['Total Contributions', 'Longest Streak']:
-                  for node in column(label).iter('{' + NS + '}text'):
-                      if node.get('font-size') != '12px':
-                          node.set('fill', WHITE)
-              root.set('role', 'img')
-              root.set('aria-label', f'Total contributions, current streak of {value} days, and longest streak')
-              return ET.tostring(root, encoding='unicode')
-          
-          if __name__ == '__main__':
-              query = urllib.parse.urlencode({
-                  'user':os.environ.get('GITHUB_USER','benjaminbelloeil'),
-                  'theme':'dark', 'locale':'en', 'short_numbers':'false',
-                  'hide_border':'true', 'card_width':'900', 'card_height':'180',
-                  'background':'202020', 'ring':'FFFFFF', 'fire':'FFFFFF',
-                  'currStreakLabel':'FFFFFF', 'currStreakNum':'FFFFFF',
-                  'sideLabels':'FFFFFF', 'sideNums':'FFFFFF',
-                  'dates':'A0A0A0', 'stroke':'383838'
-              })
-              with urllib.request.urlopen('https://streak-stats.demolab.com/?' + query, timeout=60) as response:
-                  svg = response.read().decode('utf-8')
-              rendered = style_streak(svg)
-              Path('assets').mkdir(exist_ok=True)
-              Path('assets/streak.svg').write_text(rendered)
-              print('Updated streak card; orange only for a positive current streak')
-          STREAK_SCRIPT
-      - name: Update the bundled profile images
-        run: |
-          git add -- assets/galaga-contribution-graph.svg assets/galaga-contribution-graph-dark.svg assets/top-languages.svg assets/streak.svg
+          git add -- assets/profile-details.svg assets/stats.svg assets/top-languages.svg assets/streak.svg assets/galaga-contribution-graph.svg assets/galaga-contribution-graph-dark.svg
           if git diff --cached --quiet; then
-            echo "Profile images are already up to date."
+            echo "Galaga images are already up to date."
             exit 0
           fi
-          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh profile cards"
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh Galaga contribution graphs"
           git pull --rebase origin main
           git push origin HEAD:main
+
