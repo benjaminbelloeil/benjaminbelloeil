@@ -1,14 +1,14 @@
-<img width="100%" src="https://i.pinimg.com/originals/ca/00/63/ca00636e3c270b35b83251300cc880e2.gif" alt="Animated profile banner" />
+<img width="100%" height="400" src="https://i.pinimg.com/originals/ca/00/63/ca00636e3c270b35b83251300cc880e2.gif" alt="Animated profile banner" />
 
 <h1>
-  <img src="./assets/name-title.svg" width="820px" alt="Benjamin Belloeil" />
+  <img src="./assets/name-title.svg" width="840px" alt="Benjamin Belloeil" />
 </h1>
 
 <picture>
-  <source media="(max-width: 820px)" srcset="./assets/engineer.svg?v=1.1" />
+  <source media="(max-width: 840px)" srcset="./assets/engineer.svg?v=1.1" />
   <img
     src="./assets/engineer.svg?v=1.1"
-    width="820"
+    width="840"
     alt="Benjamin Belloeil - Full-stack software engineer with Swift and mobile development skills"
   />
 </picture>
