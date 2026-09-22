@@ -1,8 +1,8 @@
+<img src="./assets/name-title.svg?v=111111" width="840px" alt="Benjamin Belloeil" />
+
 <img width="100%" height="400" src="https://i.pinimg.com/originals/ca/00/63/ca00636e3c270b35b83251300cc880e2.gif" alt="Animated profile banner" />
 
 <p>
-  <img src="./assets/name-title.svg?v=111111" width="840px" alt="Benjamin Belloeil" />
-
   <p>
     <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="./assets/linkedin-badge.svg?v=4" height="28" alt="LinkedIn profile" /></a>
     <a href="https://www.hackerrank.com/profile/benjaminbelloeil"><img src="https://img.shields.io/badge/HackerRank-202020?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=00EA64" height="30" alt="HackerRank profile" /></a>
@@ -23,7 +23,7 @@
 </picture> -->
 
 
-## Tech stack
+# Tech stack
 
 **Languages & web**
 
@@ -106,7 +106,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="54" height="54" alt="LinkedIn" title="LinkedIn" />
 </p>
 
-## GitHub activity
+# GitHub activity
 
 <div>
 <a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="./assets/profile-details.svg" alt="Benjamin Belloeil's GitHub contributions over the past year" /></a><a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="50%" src="./assets/stats.svg" alt="GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" /></a><a href="https://github.com/benjaminbelloeil?tab=repositories"><img align="top" width="50%" src="./assets/top-languages.svg" alt="Most-used languages by repository count" /></a>
@@ -116,7 +116,7 @@
 <a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="./assets/streak.svg" alt="Total GitHub contributions, current streak, and longest streak" /></a>
 </p>
 
-## Something extra
+# Something extra
 
 <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
     <picture>
