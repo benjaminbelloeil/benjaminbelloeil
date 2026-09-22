@@ -4,7 +4,7 @@
   <img src="./assets/name-title.svg?v=111111" width="840px" alt="Benjamin Belloeil" />
 
   <p>
-    <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="./assets/linkedin-badge-grey.svg" height="30" alt="LinkedIn profile" /></a>
+    <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="./assets/linkedin-badge.svg?v=4" height="28" alt="LinkedIn profile" /></a>
     <a href="https://www.hackerrank.com/profile/benjaminbelloeil"><img src="https://img.shields.io/badge/HackerRank-202020?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=00EA64" height="30" alt="HackerRank profile" /></a>
     <a href="https://www.instagram.com/benjaminbelloeil_/"><img src="https://img.shields.io/badge/Instagram-202020?style=for-the-badge&amp;logo=instagram&amp;logoColor=E4405F" height="30" alt="Instagram profile" /></a>
     <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w"><img src="https://img.shields.io/badge/Spotify-202020?style=for-the-badge&amp;logo=spotify&amp;logoColor=1DB954" height="30" alt="Spotify profile" /></a>
