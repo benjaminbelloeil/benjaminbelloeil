@@ -2,6 +2,15 @@
 
 <img width="100%" height="400" src="https://i.pinimg.com/originals/ca/00/63/ca00636e3c270b35b83251300cc880e2.gif" alt="Animated profile banner" />
 
+
+<a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
+    <picture>
+      <source media="(max-width: 600px)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=400&amp;theme=dark&amp;bg_color=111111&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" />
+      <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=111111&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" width="100%" alt="My three most recently played tracks on Spotify" />
+    </picture>
+  </a>
+
+  
 <p>
   <p>
     <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="./assets/linkedin-badge.svg?v=4" height="28" alt="LinkedIn profile" /></a>
@@ -118,17 +127,6 @@
 <p>
 <a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="./assets/streak.svg" alt="Total GitHub contributions, current streak, and longest streak" /></a>
 </p>
-
-</br>
-
-# Something extra
-
-<a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w">
-    <picture>
-      <source media="(max-width: 600px)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=400&amp;theme=dark&amp;bg_color=111111&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" />
-      <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=74s9ly4x7b0vrvlyzmx9iwr3w&amp;count=3&amp;unique=true&amp;width=900&amp;theme=dark&amp;bg_color=111111&amp;text_color=F1F1F1&amp;artist_color=CACACA&amp;meta_color=A0A0A0&amp;accent_color=BBBBBB&amp;logo_color=DDDDDD" width="100%" alt="My three most recently played tracks on Spotify" />
-    </picture>
-  </a>
 
 
 <!-- <div>
