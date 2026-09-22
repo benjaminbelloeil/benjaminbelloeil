@@ -1,25 +1,27 @@
 <img width="100%" height="400" src="https://i.pinimg.com/originals/ca/00/63/ca00636e3c270b35b83251300cc880e2.gif" alt="Animated profile banner" />
 
-<h1>
+<p>
   <img src="./assets/name-title.svg" width="840px" alt="Benjamin Belloeil" />
-</h1>
 
-<picture>
+  <p>
+    <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="./assets/linkedin-badge.svg" height="30" alt="LinkedIn profile" /></a>
+    <a href="https://www.hackerrank.com/profile/benjaminbelloeil"><img src="https://img.shields.io/badge/HackerRank-202020?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=00EA64" height="30" alt="HackerRank profile" /></a>
+    <a href="https://www.instagram.com/benjaminbelloeil_/"><img src="https://img.shields.io/badge/Instagram-202020?style=for-the-badge&amp;logo=instagram&amp;logoColor=E4405F" height="30" alt="Instagram profile" /></a>
+    <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w"><img src="https://img.shields.io/badge/Spotify-202020?style=for-the-badge&amp;logo=spotify&amp;logoColor=1DB954" height="30" alt="Spotify profile" /></a>
+  </p>
+</p>
+
+
+
+<!-- <picture>
   <source media="(max-width: 840px)" srcset="./assets/engineer.svg?v=1.1" />
   <img
     src="./assets/engineer.svg?v=1.1"
     width="840"
     alt="Benjamin Belloeil - Full-stack software engineer with Swift and mobile development skills"
   />
-</picture>
+</picture> -->
 
-
-<p>
-  <a href="https://www.linkedin.com/in/benjaminbelloeil/"><img src="./assets/linkedin-badge.svg" height="30" alt="LinkedIn profile" /></a>
-  <a href="https://www.hackerrank.com/profile/benjaminbelloeil"><img src="https://img.shields.io/badge/HackerRank-202020?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=00EA64" height="30" alt="HackerRank profile" /></a>
-  <a href="https://www.instagram.com/benjaminbelloeil_/"><img src="https://img.shields.io/badge/Instagram-202020?style=for-the-badge&amp;logo=instagram&amp;logoColor=E4405F" height="30" alt="Instagram profile" /></a>
-  <a href="https://open.spotify.com/user/74s9ly4x7b0vrvlyzmx9iwr3w"><img src="https://img.shields.io/badge/Spotify-202020?style=for-the-badge&amp;logo=spotify&amp;logoColor=1DB954" height="30" alt="Spotify profile" /></a>
-</p>
 
 ## Tech stack
 
@@ -124,10 +126,10 @@
   </a>
 
 
-<div>
+<!-- <div>
   <picture data-importer="pacman">
     <source media="(prefers-color-scheme: dark)" srcset="./assets/galaga-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/galaga-contribution-graph.svg" />
     <img width="100%" alt="Galaga animation of my GitHub contribution graph" src="./assets/galaga-contribution-graph.svg" />
   </picture>
-</div>
+</div> -->
