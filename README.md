@@ -22,6 +22,7 @@
   />
 </picture> -->
 
+</br>
 
 # Tech stack
 
@@ -106,6 +107,8 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="54" height="54" alt="LinkedIn" title="LinkedIn" />
 </p>
 
+</br>
+
 # GitHub activity
 
 <div>
@@ -115,6 +118,8 @@
 <p>
 <a href="https://github.com/benjaminbelloeil?tab=overview"><img align="top" width="100%" src="./assets/streak.svg" alt="Total GitHub contributions, current streak, and longest streak" /></a>
 </p>
+
+</br>
 
 # Something extra
 
