@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - .github/workflows/galaga.yml
+      - .github/scripts/streak.mjs
   schedule:
     - cron: '23 5 * * *'
 
@@ -92,9 +93,14 @@ jobs:
             console.log(`Generated ${filename} for ${username}`);
           }
           GALAGA_SCRIPT
+      - name: Generate streak card
+        env:
+          GITHUB_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/streak.mjs
       - name: Update the bundled Galaga images
         run: |
-          git add -- assets/galaga-contribution-graph.svg assets/galaga-contribution-graph-dark.svg
+          git add -- assets/streak.svg assets/galaga-contribution-graph.svg assets/galaga-contribution-graph-dark.svg
           if git diff --cached --quiet; then
             echo "Galaga images are already up to date."
             exit 0
